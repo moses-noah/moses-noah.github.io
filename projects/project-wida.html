@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnwithWiDa Internship Capstone - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Electronics Store Sales Analysis</h1>
+            <p class="project-subtitle">The capstone project of a 5-week data analytics virtual internship with LearnwithWiDa, highlighting my progression from foundational Excel functions to dynamic business intelligence reporting.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>January 2026</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Data Analytics Intern (Team Wicart)</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/LearnwithWiDa-Dec-2025-Internship-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    As the culmination of a 5-week virtual internship with LearnwithWiDa, I was tasked with analyzing a synthetic dataset of 100 distinct electronics store transactions. The objective was to identify key sales trends, evaluate regional performance, and understand customer behaviors to answer critical business questions.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    Using Microsoft Excel exclusively, I aggregated the raw data using extensive Pivot Tables to summarize complex metrics across regions and member tiers. I then built a user-friendly Excel dashboard integrating KPIs and charts. While the final presentation was a collaborative effort with "Team Wicart", the technical workbook execution and dashboard design present were my personal take on the task. <em>(Note: The foundational weekly exercises leading up to this capstone can be viewed in the full GitHub repository).</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fas fa-file-excel"></i> Excel
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <img src="../assets/images/wida-dashboard.png" alt="Week 5 Capstone Excel Dashboard" class="showcase-image lightbox-trigger" onclick="openLightbox('lightbox-main')">
+            </div>
+
+            <p class="showcase-caption">
+                The final Week 5 Capstone Excel Dashboard visualizing sales performance, customer loyalty tiers, and logistical trends.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Click image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox-main">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-main')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/wida-dashboard.png" alt="Week 5 Capstone Excel Dashboard">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Raw Synthetic Dataset → Data Cleaning & Formatting → Pivot Table Aggregation → Interactive Excel Dashboard.
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>Raw Data → Cleaning → Pivot Tables → Dashboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Behind the Scenes</h2>
+                <p>Here's a glimpse into the technical work that powers this project:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/wida-dataset.PNG" alt="Raw Excel Dataset" class="lightbox-trigger" onclick="openLightbox('lightbox-dataset')">
+                        <p>Raw Synthetic Dataset</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/wida-pivots.PNG" alt="Pivot Table Aggregation" class="lightbox-trigger" onclick="openLightbox('lightbox-pivots')">
+                        <p>Pivot Table Aggregation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-dataset">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-dataset')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/wida-dataset.PNG" alt="Raw Excel Dataset">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-pivots">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-pivots')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/wida-pivots.PNG" alt="Pivot Table Aggregation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what we achieved and learned:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">$34,294</div>
+                    <p class="insight-description">Gold Tier Sales</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">~$40k</div>
+                    <p class="insight-description">Laptop Revenue</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">$23,245</div>
+                    <p class="insight-description">East Region Sales</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">53%</div>
+                    <p class="insight-description">Standard Shipping</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>Customer Loyalty:</strong> "Gold" tier members placed the most orders, generating $34,294 in revenue, which suggests strong brand loyalty among premium users. Silver and Bronze members performed nearly identically.</li>
+                    <li><strong>Product Performance:</strong> Laptops were the primary revenue driver by a wide margin, contributing approximately $40,000 to the total sales volume.</li>
+                    <li><strong>Logistics:</strong> Standard shipping accounted for 53% of deliveries, suggesting that customers prioritize cost-efficiency over speed (Same Day shipping was only 19%).</li>
+                    <li><strong>Strategic Action:</strong> Recommended focusing marketing efforts on underperforming regions and creating targeted incentives to encourage "Bronze" members to upgrade to "Gold" tiers to increase overall order values.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="../assets/downloads/wida-report.pdf" download class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Project Report
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-banking.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">Banking Data Storytelling</span>
+                </a>
+                <a href="project-covid.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">COVID-19 Global Pandemic Analysis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

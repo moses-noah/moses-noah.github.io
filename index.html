@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses Noah - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Noah.<br><span class="gradient-text">I turn data into decisions.</span></h1>
+                <p class="hero-subtitle">Data Analyst</p>
+                <div class="hero-cta">
+                    <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/headshot.jpg" alt="Moses Noah" class="headshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="projects-list">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/spotify-powerbi-canvas.png" alt="Spotify Wrapped 2025 Analysis">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Spotify Wrapped 2025 Analysis</h3>
+                        <p class="project-hook">Moving beyond the standard "Wrapped" to uncover the granular details of my year in audio.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">
+                                <i class="fas fa-file-excel"></i> Excel
+                            </span>
+                            <span class="tech-badge">
+                                <i class="fas fa-chart-bar"></i> Power BI
+                            </span>
+                        </div>
+                        <a href="projects/project-spotify.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/adidas-dashboard.png" alt="Adidas US Sales Performance">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Adidas US Sales Performance (2020-2021)</h3>
+                        <p class="project-hook">Evaluating explosive growth, regional dominance, and the efficiency of online sales channels.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">
+                                <i class="fas fa-chart-bar"></i> Power BI
+                            </span>
+                            <span class="tech-badge">
+                                <i class="fas fa-file-excel"></i> Excel
+                            </span>
+                        </div>
+                        <a href="projects/project-adidas.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/lulc-dashboard-1.PNG" alt="Web-Based Change Detection Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web-Based Change Detection Dashboard</h3>
+                        <p class="project-hook">A cloud-powered geospatial application detecting land use dynamics using Sentinel-2 imagery and K-Means clustering.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">
+                                <i class="fab fa-python"></i> Python
+                            </span>
+                            <span class="tech-badge">
+                                <i class="fas fa-satellite"></i> Google Earth Engine
+                            </span>
+                            <span class="tech-badge">
+                                <i class="fas fa-globe"></i> Streamlit
+                            </span>
+                        </div>
+                        <a href="projects/project-lulc.html" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-projects">
+                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Skills Section -->
+    <section class="tools-skills">
+        <div class="section-container">
+            <h2 class="section-title">Tools & Skills</h2>
+            <p class="section-subtitle">Technologies I Master</p>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Power BI</h3>
+                    <p>Advanced dashboards & data visualization</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Data analysis, automation & scripting</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL</h3>
+                    <p>Complex queries & database optimization</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3>Excel</h3>
+                    <p>Advanced formulas & data modeling</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version control & collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Teaser Section -->
+    <section class="resume-teaser">
+        <div class="section-container">
+            <div class="resume-content">
+                <h2>Let's Work Together</h2>
+                <p>Ready to see my full experience and qualifications? View my complete resume or download the PDF.</p>
+                <div class="resume-actions">
+                    <a href="resume.html" class="btn btn-primary">
+                        <i class="fas fa-file-pdf"></i> View Full Resume
+                    </a>
+                    <a href="assets/resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Resume (.pdf)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

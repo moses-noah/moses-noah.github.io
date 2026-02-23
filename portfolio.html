@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Moses Noah</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="section-container">
+            <h1>My Portfolio</h1>
+            <p>A complete archive of my data analysis, visualization, and development work.</p>
+        </div>
+    </section>
+
+    <!-- Filter Categories -->
+    <section class="filter-section">
+        <div class="section-container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="power-bi">Power BI</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="excel">Excel</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Timeline -->
+    <section class="projects-archive">
+        <div class="section-container">
+            <div class="projects-timeline">
+                <!-- 2026 Timeline -->
+                <div class="timeline-year-section">
+                    <h3 class="timeline-year-header">2026</h3>
+                    <div class="timeline-items">
+                        <!-- February 2026 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">February</div>
+                            </div>
+                            <div class="project-card-archive" data-category="excel power-bi">
+                                <div class="project-card-image">
+                                    <img src="assets/images/spotify-powerbi-canvas.png" alt="Spotify Wrapped 2025 Analysis">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>Spotify Wrapped 2025 Analysis</h3>
+                                    <p>Moving beyond the standard "Wrapped" to uncover the granular details of my year in audio.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fas fa-file-excel"></i> Excel
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-chart-bar"></i> Power BI
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-spotify.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- January 2026 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">January</div>
+                            </div>
+                            <div class="project-card-archive" data-category="excel">
+                                <div class="project-card-image">
+                                    <img src="assets/images/wida-dashboard.png" alt="Electronics Store Sales Analysis">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>Electronics Store Sales Analysis</h3>
+                                    <p>Capstone project from a 5-week data analytics internship, showcasing progression from foundational Excel functions to dynamic business intelligence reporting.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fas fa-file-excel"></i> Excel
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-wida.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2025 Timeline -->
+                <div class="timeline-year-section">
+                    <h3 class="timeline-year-header">2025</h3>
+                    <div class="timeline-items">
+                        <!-- December 2025 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">December</div>
+                            </div>
+                            <div class="project-card-archive" data-category="excel power-bi">
+                                <div class="project-card-image">
+                                    <img src="assets/images/adidas-dashboard.png" alt="Adidas US Sales Performance">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>Adidas US Sales Performance (2020-2021)</h3>
+                                    <p>Evaluating explosive growth, regional dominance, and the efficiency of online sales channels.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fas fa-chart-bar"></i> Power BI
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-file-excel"></i> Excel
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-adidas.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- September 2025 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">September</div>
+                            </div>
+                            <div class="project-card-archive" data-category="python">
+                                <div class="project-card-image">
+                                    <img src="assets/images/lulc-dashboard-1.PNG" alt="Web-Based Change Detection Dashboard">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>Web-Based Change Detection Dashboard</h3>
+                                    <p>A cloud-powered geospatial application detecting land use dynamics using Sentinel-2 imagery, Google Earth Engine, and K-Means clustering.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fab fa-python"></i> Python
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-satellite"></i> Google Earth Engine
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-globe"></i> Streamlit
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-lulc.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- July 2025 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">July</div>
+                            </div>
+                            <div class="project-card-archive" data-category="power-bi excel dax">
+                                <div class="project-card-image">
+                                    <img src="assets/images/banking-dashboard-1.png" alt="Banking Data Storytelling">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>Banking Data Storytelling & Risk Analytics</h3>
+                                    <p>Uncovering customer demographics, loan default risks, and transaction behaviors for 2,939 bank customers.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fas fa-chart-bar"></i> Power BI
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-file-excel"></i> Excel
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-function"></i> DAX
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-banking.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 Timeline -->
+                <div class="timeline-year-section">
+                    <h3 class="timeline-year-header">2024</h3>
+                    <div class="timeline-items">
+                        <!-- December 2024 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">December</div>
+                            </div>
+                            <div class="project-card-archive" data-category="python">
+                                <div class="project-card-image">
+                                    <img src="assets/images/airplane-webapp.PNG" alt="Historical Airplane Crash Analysis">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>Historical Airplane Crash Analysis</h3>
+                                    <p>An end-to-end Python project exploring a century of aviation safety, deployed as an interactive Streamlit web application.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fab fa-python"></i> Python
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-database"></i> Pandas
+                                        </span>
+                                        <span class="tech-badge">
+                                            <i class="fas fa-chart-line"></i> Streamlit
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-airplane.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- October 2024 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">October</div>
+                            </div>
+                            <div class="project-card-archive" data-category="power-bi">
+                                <div class="project-card-image">
+                                    <img src="assets/images/covid-dashboard-1.png" alt="COVID-19 Global Pandemic Analysis">
+                                </div>
+                                <div class="project-card-info">
+                                    <h3>COVID-19 Global Pandemic Analysis</h3>
+                                    <p>Exploring the "GDP Paradox," healthcare capacity, and the impact of government stringency on pandemic mortality.</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-badge">
+                                            <i class="fas fa-chart-bar"></i> Power BI
+                                        </span>
+                                    </div>
+                                    <a href="projects/project-covid.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="section-container">
+            <h2>Have an Interesting Project in Mind?</h2>
+            <p>I'm always excited to collaborate and bring data-driven solutions to life.</p>
+            <a href="index.html#contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>

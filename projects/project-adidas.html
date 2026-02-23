@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Sales Analysis - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Adidas US Sales Performance (2020-2021)</h1>
+            <p class="project-subtitle">Evaluating year-over-year explosive growth, regional dominance, and the efficiency of online sales channels.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>December 2025</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Data Analyst</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/Adidas-Sales-Analysis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    After a period of explosive growth in 2021, stakeholders needed a comprehensive breakdown of Adidas sales performance across the United States. The objective was to understand how sales evolved from 2020 to 2021, identify the highest-performing regions and retailers, and determine which sales methods should be prioritized for future investments to sustain momentum.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    I utilized Power BI to conduct end-to-end analysis. Starting with Power Query, I engineered custom tracking columns (like Operating Profit and composite Location IDs). I then conducted extensive Exploratory Data Analysis (EDA) to map retailer distribution before building an interactive Star Schema dashboard to visualize YoY growth, regional dominance, and product trends.
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fas fa-chart-bar"></i> Power BI
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-file-excel"></i> Excel
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <img src="../assets/images/adidas-dashboard.png" alt="Adidas Sales Analysis Dashboard" class="lightbox-trigger" onclick="openLightbox('lightbox-main')">
+            </div>
+
+            <p class="showcase-caption">
+                The main Adidas Sales Analysis dashboard highlighting the massive 336% YoY surge in units sold and the dominance of the West Region.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Click image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL FOR SHOWCASE -->
+    <div class="lightbox" id="lightbox-main">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-main')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/adidas-dashboard.png" alt="Adidas Sales Analysis Dashboard">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Raw Excel Data → Power BI (Power Query for GUI-based M Language transformations) → Star Schema Data Modeling → EDA & Dashboard Visualization.
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>Excel Data → Power Query → Star Schema → Power BI Dashboards</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>The Analysis Process</h2>
+                <p>Key components of the Adidas sales analysis:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/adidas-power-query-transformation.png" alt="Power Query Transformations" class="lightbox-trigger" onclick="openLightbox('lightbox-powerquery')">
+                        <p>Power Query Transformations</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/adidas-data-story.png" alt="EDA Data Storying" class="lightbox-trigger" onclick="openLightbox('lightbox-eda')">
+                        <p>EDA Data Storying</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-powerquery">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-powerquery')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/adidas-power-query-transformation.png" alt="Power Query Transformations">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-eda">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-eda')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/adidas-data-story.png" alt="EDA Data Storying">
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Power Query Transformations</h2>
+                <p>Here's a sample of the Power Query M Language used to engineer custom columns and prepare data for analysis:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">PowerQuery</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+// Generating composite keys and calculated columns using Power Query UI
+= Table.AddColumn(#"Inserted Merged Column1", "Location ID", 
+  each Text.Combine({[City], [State]}, " - "), type text)
+
+= Table.AddColumn(#"Changed Type3", "Multiplication", 
+  each [Total Sales] * [Operating Margin], type number)
+  
+= Table.RenameColumns(#"Removed Columns1",
+  {{"Multiplication", "Operating Profit"}})
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what the analysis revealed:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">+295%</div>
+                    <p class="insight-description">Total Sales YoY Growth in 2021</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">$38.2M</div>
+                    <p class="insight-description">Total Profit in 2021</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">$36.4M</div>
+                    <p class="insight-description">West Region Sales</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">$28M</div>
+                    <p class="insight-description">Men's Street Footwear Revenue</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>The Distribution Paradox:</strong> While the Northeast holds the most retailers (23%), the West Region generated the most revenue ($36.4M), driven heavily by the "West Gear" retailer.</li>
+                    <li><strong>Explosive 2021 Growth:</strong> Sales saw a massive 295% surge in 2021, peaking in July ($10.4M) compared to the 2020 peak in April ($3.2M).</li>
+                    <li><strong>Peak Sales Timing:</strong> 2020 sales peaked in April at $3.2M while 2021 sales peaked in July with $10.4M, indicating a seasonal shift.</li>
+                    <li><strong>Strategic Recommendation:</strong> Increase ad spend and promotions during historically slower quarters (Q1 and Q3) to flatten seasonality curves and maintain the strategies that drove the 2021 surge.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="../assets/downloads/Adidas-sales-analysis.pbix" download class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Interactive Dashboard (.pbix)
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-spotify.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">Spotify Wrapped 2025 Analysis</span>
+                </a>
+
+                <a href="project-banking.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">Banking Data Storytelling</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

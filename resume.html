@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses Noah - Resume | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Resume-Specific Styles -->
+    <style>
+        /* =============================================
+           RESUME PAGE - COMPREHENSIVE STYLING
+           ============================================= */
+
+        /* Global Container */
+        .resume-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Page Hero Section */
+        .page-header {
+            background: linear-gradient(135deg, rgba(107, 114, 128, 0.08), rgba(156, 163, 175, 0.08));
+            padding: 5rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 380px;
+        }
+
+        .page-header .section-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .page-header p {
+            font-size: 1.125rem;
+            color: #64748b;
+            max-width: 700px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .page-header .btn {
+            margin-top: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* Resume Content Section */
+        .resume-section {
+            padding: 4rem 2rem;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .resume-section .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .resume-content {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        /* Section Blocks */
+        .resume-block {
+            margin-bottom: 3.5rem;
+            padding-bottom: 3rem;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .resume-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Section Titles */
+        .resume-section-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+        }
+
+        .resume-section-title::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 32px;
+            background: linear-gradient(135deg, #6b7280, #9ca3af);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        /* Professional Summary */
+        .resume-summary-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #1e293b;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border-left: 5px solid #14b8a6;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        /* Core Competencies Grid */
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .competency-category {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .competency-category-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .competency-category-title i {
+            color: #14b8a6;
+        }
+
+        .competency-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .competency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.7rem 1.2rem;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border: 1.5px solid #e2e8f0;
+            border-radius: 28px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #374151;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: default;
+        }
+
+        .competency-badge:hover {
+            background: linear-gradient(135deg, #6b7280, #9ca3af);
+            color: white;
+            border-color: #6b7280;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .competency-badge i {
+            font-size: 1.05rem;
+        }
+
+        /* Experience Timeline */
+        .experience-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .experience-item {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1.75rem;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-radius: 0.75rem;
+            border-left: 5px solid #14b8a6;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .experience-item:hover {
+            transform: translateX(6px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 24px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border: 3px solid #14b8a6;
+            border-radius: 50%;
+        }
+
+        .experience-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .experience-role {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .experience-company {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #6b7280;
+            background: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+        }
+
+        .experience-date {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        .experience-bullets {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .experience-bullets li {
+            position: relative;
+            padding-left: 1.75rem;
+            color: #374151;
+            font-size: 0.98rem;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .experience-bullets li::before {
+            content: '▸';
+            position: absolute;
+            left: 0.25rem;
+            color: #14b8a6;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Education Section */
+        .education-item {
+            padding: 1.75rem;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-radius: 0.75rem;
+            border-left: 5px solid #14b8a6;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .education-item:hover {
+            transform: translateX(6px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 24px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border: 3px solid #14b8a6;
+            border-radius: 50%;
+        }
+
+        .education-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .education-degree {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .education-institution {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #6b7280;
+            background: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            display: inline-block;
+            width: fit-content;
+        }
+
+        .education-description {
+            font-size: 0.98rem;
+            line-height: 1.7;
+            color: #374151;
+            text-align: left;
+        }
+
+        /* Certifications Gallery */
+        .certifications-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .certification-item {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 0.875rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .certification-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+            border-color: #14b8a6;
+        }
+
+        .certification-image {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .certification-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .certification-item:hover .certification-image img {
+            transform: scale(1.08);
+        }
+
+        .certification-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0;
+            padding: 1.5rem;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(4px);
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 25px;
+            right: 45px;
+            color: white;
+            font-size: 42px;
+            cursor: pointer;
+            z-index: 2001;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            line-height: 1;
+        }
+
+        .lightbox-close:hover {
+            transform: scale(1.25);
+            color: #14b8a6;
+        }
+
+        .lightbox-trigger {
+            cursor: pointer;
+        }
+
+        /* =============================================
+           RESPONSIVE RESUME STYLES
+           ============================================= */
+
+        @media (max-width: 768px) {
+            .page-header {
+                min-height: auto;
+                padding: 3.5rem 1.5rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .page-header p {
+                font-size: 1rem;
+            }
+
+            .resume-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .resume-section-title {
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .competencies-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .experience-date {
+                margin-left: 0;
+            }
+
+            .certifications-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .certification-image {
+                height: auto;
+            }
+
+            .lightbox-close {
+                top: 15px;
+                right: 25px;
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header {
+                min-height: auto;
+                padding: 2.5rem 1rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .page-header p {
+                font-size: 0.95rem;
+            }
+
+            .page-header .btn {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.9rem;
+                padding: 0.7rem 1.5rem;
+            }
+
+            .resume-section {
+                padding: 2rem 1rem;
+            }
+
+            .resume-content {
+                max-width: 100%;
+            }
+
+            .resume-section-title {
+                font-size: 1.2rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .competencies-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .competency-badges {
+                gap: 0.75rem;
+            }
+
+            .competency-badge {
+                padding: 0.55rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .resume-summary-text {
+                padding: 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            .experience-item {
+                padding: 1.25rem;
+                padding-left: 1.5rem;
+            }
+
+            .experience-item::before {
+                left: -8px;
+                width: 18px;
+                height: 18px;
+                border-width: 2px;
+            }
+
+            .experience-role {
+                font-size: 1rem;
+            }
+
+            .experience-company {
+                font-size: 0.9rem;
+                padding: 0.3rem 0.6rem;
+            }
+
+            .experience-bullets li {
+                padding-left: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .education-item {
+                padding: 1.25rem;
+                padding-left: 1.5rem;
+            }
+
+            .education-item::before {
+                left: -8px;
+                width: 18px;
+                height: 18px;
+                border-width: 2px;
+            }
+
+            .education-degree {
+                font-size: 1rem;
+            }
+
+            .certifications-gallery {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .certification-image {
+                height: auto;
+            }
+
+            .certification-title {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .lightbox-close {
+                top: 12px;
+                right: 15px;
+                font-size: 26px;
+            }
+
+            .lightbox-content {
+                max-width: 95%;
+                max-height: 95%;
+            }
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="section-container">
+            <h1>Moses Noah | Data Analyst</h1>
+            <p>Transforming complex datasets into clear, actionable reports and interactive dashboards that guide strategic business decisions.</p>
+            <a href="assets/Moses_Noah_Resume.pdf" download class="btn btn-primary">
+                <i class="fas fa-download"></i> Download Resume (.pdf)
+            </a>
+        </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section class="resume-section">
+        <div class="section-container">
+            <div class="resume-content">
+                <!-- Summary Section -->
+                <div class="resume-block">
+                    <h2 class="resume-section-title">Professional Summary</h2>
+                    <p class="resume-summary-text">Detail-oriented Data Analyst with a B.Sc. in Computer Science and a proven ability to translate raw, messy data into strategic business intelligence. Specializing in data modeling, exploratory analysis, and the development of comprehensive reports that empower stakeholders to make informed, data-driven decisions.</p>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="resume-block">
+                    <h2 class="resume-section-title">Core Competencies</h2>
+                    <div class="competencies-grid">
+                        <div class="competency-category">
+                            <h3 class="competency-category-title">Tools</h3>
+                            <div class="competency-badges">
+                                <span class="competency-badge">
+                                    <i class="fas fa-chart-bar"></i> Microsoft Power BI
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-file-excel"></i> Microsoft Excel
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-database"></i> SQL
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-database"></i> Python (Pandas, NumPy)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="competency-category">
+                            <h3 class="competency-category-title">Techniques</h3>
+                            <div class="competency-badges">
+                                <span class="competency-badge">
+                                    <i class="fas fa-broom"></i> Data Cleaning & Transformation
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-sitemap"></i> Data Modeling
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-function"></i> DAX & Formulas
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-microscope"></i> Exploratory Data Analysis
+                                </span>
+                                <span class="competency-badge">
+                                    <i class="fas fa-chart-pie"></i> Data Storytelling & Reporting
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relevant Data Experience -->
+                <div class="resume-block">
+                    <h2 class="resume-section-title">Relevant Data Experience</h2>
+                    <div class="experience-timeline">
+                        <!-- Experience 1 -->
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-role">Data Analytics Intern</h3>
+                                <span class="experience-company">LearnwithWiDa</span>
+                                <span class="experience-date">December 2025 - January 2026</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Collaborated with "Team Wicart" to analyze synthetic electronics retail data, uncovering regional performance trends and customer loyalty metrics.</li>
+                                <li>Designed dynamic Excel dashboards and compiled final business reports providing strategic recommendations for marketing focus.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-role">Data Analyst (Hackathon)</h3>
+                                <span class="experience-company">Data Science Nigeria (DSN)</span>
+                                <span class="experience-date">July 2025</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Analyzed a dataset of nearly 3,000 bank customers during the "AI Classes In Every City" hackathon under strict time constraints.</li>
+                                <li>Engineered advanced DAX measures to automate loan risk tiering and delivered a comprehensive Power BI report identifying peak transaction bottlenecks.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3 class="experience-role">Data Analytics Trainee</h3>
+                                <span class="experience-company">HIIT Plc (Ikeja, Lagos)</span>
+                                <span class="experience-date">October 2024 - December 2024 | January 2026</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Completed an intensive, hands-on training program focused on real-world applications of Power BI, Excel, SQL and Python.</li>
+                                <li>Built end-to-end data pipelines, including my debut Power BI project analyzing COVID-19 global pandemic trends and a Python-based historical airplane crash analysis.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Education & Academic Research -->
+                <div class="resume-block">
+                    <h2 class="resume-section-title">Education & Academic Research</h2>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="education-degree">B.Sc. Computer Science</h3>
+                            <span class="education-institution">Ekiti State University (EKSU)</span>
+                        </div>
+                        <p class="education-description">Led a data-intensive capstone project utilizing satellite imagery and clustering algorithms to detect and quantify land use changes, delivering a full academic report on spatial dynamics.</p>
+                    </div>
+                </div>
+
+                <!-- Certifications Gallery -->
+                <div class="resume-block">
+                    <h2 class="resume-section-title">Certifications</h2>
+                    <div class="certifications-gallery">
+                        <div class="certification-item">
+                            <div class="certification-image">
+                                <img src="assets/images/wida-certificate.jpg" alt="LearnwithWiDa Data Analytics Certificate" class="lightbox-trigger" onclick="openLightbox('lightbox-wida-cert')">
+                            </div>
+                            <h3 class="certification-title">LearnwithWiDa Data Analytics Certificate</h3>
+                        </div>
+                        <!-- Additional certificates can be added here in the future -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODALS FOR CERTIFICATIONS -->
+    <div class="lightbox" id="lightbox-wida-cert">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-wida-cert')">&times;</span>
+            <img class="lightbox-image" src="assets/images/wida-certificate.jpg" alt="LearnwithWiDa Data Analytics Certificate">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

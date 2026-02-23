@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Global Pandemic Analysis - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">COVID-19 Global Pandemic Analysis</h1>
+            <p class="project-subtitle">Exploring the "GDP Paradox," healthcare capacity, and the impact of government stringency on pandemic mortality.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>October 2024</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Data Analyst</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/COVID-19-Analysis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    Understanding the spread and impact of COVID-19 requires looking beyond just case counts. Stakeholders and public health officials needed to know how external factors—such as a country's GDP, population density, available hospital beds, and government lockdown stringency—correlated with mortality and recovery rates.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    Sourcing raw CSV data from Our World In Data, I executed an end-to-end analysis exclusively within Power BI. I built a complex hybrid Star/Snowflake schema data model, standardizing the data and engineering custom DAX measures. By categorizing continuous data into discrete analytical tiers (e.g., Stringency Category, Testing Rates), I enabled deep correlation analysis using scatter plots and trend lines.
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fas fa-chart-bar"></i> Power BI
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slide active">
+                    <img src="../assets/images/covid-dashboard-1.png" alt="Cases and Deaths Trends" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-1')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/covid-dashboard-2.png" alt="Demographic Impacts" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-2')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/covid-dashboard-3.png" alt="Vaccination Trends" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-3')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/covid-dashboard-4.png" alt="Testing Outcomes" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-4')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/covid-dashboard-5.png" alt="Healthcare Capacity Analysis" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-5')">
+                </div>
+
+                <button class="carousel-nav carousel-prev">❮</button>
+                <button class="carousel-nav carousel-next">❯</button>
+            </div>
+
+            <div class="carousel-indicators">
+                <button class="carousel-dot active" onclick="updateCarousel(0)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(1)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(2)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(3)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(4)"></button>
+            </div>
+
+            <p class="showcase-caption">
+                Power BI dashboards showing trends in cases and deaths, demographic impacts, vaccinations, and testing outcomes.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Use arrow keys or buttons to navigate • Click any image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODALS FOR CAROUSEL IMAGES -->
+    <div class="lightbox" id="lightbox-carousel-1">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-1')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/covid-dashboard-1.png" alt="Cases and Deaths Trends">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-2">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-2')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/covid-dashboard-2.png" alt="Demographic Impacts">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-3">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-3')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/covid-dashboard-3.png" alt="Vaccination Trends">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-4">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-4')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/covid-dashboard-4.png" alt="Testing Outcomes">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-5">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-5')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/covid-dashboard-5.png" alt="Healthcare Capacity Analysis">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Raw CSV (Our World In Data) → Power BI → Hybrid Star/Snowflake Schema Data Modeling → DAX Categorization → Visual Analytics & Reporting.
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>Raw CSV → Power BI → Schema → DAX → Analytics</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Behind the Scenes</h2>
+                <p>Here's a glimpse into the technical work that powers this project:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/covid-data-model.PNG" alt="Power BI Data Model View" class="lightbox-trigger" onclick="openLightbox('lightbox-model')">
+                        <p>Power BI Data Model View</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/covid-table-view.PNG" alt="Power BI Table View" class="lightbox-trigger" onclick="openLightbox('lightbox-table')">
+                        <p>Power BI Table View</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-model">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-model')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/covid-data-model.PNG" alt="Power BI Data Model View">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-table">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-table')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/covid-table-view.PNG" alt="Power BI Table View">
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Code Logic</h2>
+                <p>Here's a sample of the DAX code used to categorize continuous data into discrete analytical tiers for deep correlation analysis:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">DAX</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+// Categorizing continuous index scores into discrete analytical tiers using DAX
+stringency_category = 
+IF(
+    'COVID FACT TABLE'[stringency_index] < 16.35, 
+    "Less Stringent", 
+    "More Stringent"
+)
+
+// Categorizing test rates using DAX
+tests_per_thousand_category = 
+IF(
+    'COVID FACT TABLE'[total_tests_per_thousand] < 1,
+    "Low Test Rate", 
+    "High Test Rate"
+)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what was achieved and learned:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">Positive</div>
+                    <p class="insight-description">GDP vs. Mortality Correlation</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">Early 2022</div>
+                    <p class="insight-description">Global Vaccine Peak</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">7M</div>
+                    <p class="insight-description">COVID-19 Total Deaths</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">5.18Bn</div>
+                    <p class="insight-description">People Fully Vaccinated</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>The "GDP Paradox":</strong> Analysis revealed a counter-intuitive positive correlation between GDP per capita and COVID-19 deaths per million. This is driven by the fact that high-GDP nations have significantly higher population densities and much larger elderly populations (Age 65+).</li>
+                    <li><strong>Healthcare Capacity:</strong> Countries with limited healthcare capacity (low hospital beds per thousand) experienced a much steeper increase in deaths during the early months of the outbreak compared to nations with robust infrastructure.</li>
+                    <li><strong>Vaccine Efficacy Timeline:</strong> The adoption of vaccines was rapid; the number of fully vaccinated individuals peaked in early 2022. Crucially, this timeline directly aligns with the exact moment the trend of total global deaths noticeably began to flatline.</li>
+                    <li><strong>Strategic Action:</strong> Recommended increasing healthcare capacity in vulnerable regions and prioritizing vaccination drives in low-GDP areas to rapidly improve immunity rates.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="../assets/downloads/COVID-19-Analysis-Report.pdf" download class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Project Report (.pdf)
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-wida.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">LearnwithWiDa Internship</span>
+                </a>
+                <a href="project-airplane.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">Historical Airplane Crash Analysis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Based Change Detection Dashboard - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Web-Based Change Detection Dashboard</h1>
+            <p class="project-subtitle">A cloud-powered geospatial application detecting land use dynamics using Sentinel-2 imagery, Google Earth Engine, and K-Means clustering.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>September 2025</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Lead Developer / Geospatial Analyst</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/Final-Year-Project-lulc-dashboard-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Research Challenge</h3>
+                <p>
+                    Traditional land use monitoring relies on static desktop GIS software (like ArcGIS or QGIS) that is expensive, resource-intensive, and requires specialized training. This creates a barrier, keeping critical environmental intelligence out of the hands of local policymakers, educators, and the general public.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    For my B.Sc. Computer Science final year project, I built a serverless, cloud-based web application. By integrating the Google Earth Engine (GEE) API for heavy spatial computation with a Streamlit front-end, I created an interactive tool that democratizes land use monitoring. Users can draw a polygon, select a date range, and instantly visualize land cover changes.
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fab fa-python"></i> Python
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-satellite"></i> Google Earth Engine
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-globe"></i> Streamlit
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slide active">
+                    <img src="../assets/images/lulc-dashboard-1.PNG" alt="Dashboard Overview" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-1')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/lulc-dashboard-2.PNG" alt="Land Cover Classification View 1" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-2')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/lulc-dashboard-3.PNG" alt="Land Cover Classification View 2" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-3')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/lulc-dashboard-4.PNG" alt="Change Detection Analysis" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-4')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/lulc-dashboard-5.PNG" alt="Statistical Report" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-5')">
+                </div>
+
+                <button class="carousel-nav carousel-prev">❮</button>
+                <button class="carousel-nav carousel-next">❯</button>
+            </div>
+
+            <div class="carousel-indicators">
+                <button class="carousel-dot active" onclick="updateCarousel(0)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(1)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(2)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(3)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(4)"></button>
+            </div>
+
+            <p class="showcase-caption">
+                The interactive Streamlit interface displaying side-by-side unsupervised K-Means land cover clusters for the selected temporal periods.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Use arrow keys or buttons to navigate • Click any image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODALS FOR CAROUSEL IMAGES -->
+    <div class="lightbox" id="lightbox-carousel-1">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-1')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/lulc-dashboard-1.PNG" alt="Dashboard Overview">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-2">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-2')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/lulc-dashboard-2.PNG" alt="Land Cover Classification View 1">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-3">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-3')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/lulc-dashboard-3.PNG" alt="Land Cover Classification View 2">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-4">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-4')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/lulc-dashboard-4.PNG" alt="Change Detection Analysis">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-5">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-5')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/lulc-dashboard-5.PNG" alt="Statistical Report">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Data Layer (Google Earth Engine for Sentinel-2 retrieval & cloud masking) → Processing Layer (Python & Scikit-learn for K-Means Clustering) → Interface Layer (Streamlit & Folium for interactive web mapping).
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>GEE Data → Python Processing → Streamlit Interface</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Behind the Scenes</h2>
+                <p>Here's a glimpse into the technical work that powers this project:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/lulc-lvl-1-DFD.png" alt="Level 1 Dataflow Diagram" class="lightbox-trigger" onclick="openLightbox('lightbox-dfd')">
+                        <p>Level 1 Dataflow Diagram</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/lulc-AOI-map.PNG" alt="Interactive Map AOI Selection Tool" class="lightbox-trigger" onclick="openLightbox('lightbox-aoi')">
+                        <p>Interactive Map AOI Selection Tool</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-dfd">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-dfd')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/lulc-lvl-1-DFD.png" alt="Level 1 Dataflow Diagram">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-aoi">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-aoi')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/lulc-AOI-map.PNG" alt="Interactive Map AOI Selection Tool">
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Code Logic</h2>
+                <p>Here's a sample of the Python code used to retrieve and process Sentinel-2 imagery via the Google Earth Engine API:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">Python</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+# Utilizing Google Earth Engine (GEE) via Python to retrieve and mask Sentinel-2 imagery
+def get_sentinel2_composite(aoi, start_date, end_date):
+    collection = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED') \
+        .filterBounds(aoi) \
+        .filterDate(start_date, end_date) \
+        .map(mask_s2_clouds) # Custom cloud masking function
+    
+    # Return median composite clipped to the user's Area of Interest
+    return collection.median().clip(aoi)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-crew">
+        <div class="crew-container">
+            <h2>Meet the Team</h2>
+            <p>This project was completed under the guidance of:</p>
+            <div class="crew-grid">
+                <div class="crew-card">
+                    <div class="crew-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Mr. Jongbo O.A.</h3>
+                    <p class="crew-role">Project Supervisor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Case Study: EKSU Environs</h2>
+            <p>Here's what we achieved and learned:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">-71.07%</div>
+                    <p class="insight-description">Cluster 0 Decline</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">+676.44%</div>
+                    <p class="insight-description">Cluster 2 Expansion</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">10m</div>
+                    <p class="insight-description">Sentinel-2 Spatial Resolution</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">4</div>
+                    <p class="insight-description">K-Means Clusters</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>The Supervised vs. Unsupervised Pivot:</strong> Initially, I planned to train a supervised classification model. Due to time constraints and a lack of ground-truth labeled data, I pivoted to an unsupervised K-Means clustering model. This proved highly effective at detecting spatial anomalies and shifts, demonstrating that functional prototypes can be built even with imperfect data environments.</li>
+                    <li><strong>Massive Expansion:</strong> Between the 2016-2019 baseline and the 2020-2023 recent imagery, "Cluster 2" experienced aggressive growth, rising sharply from 72.29 hectares to 561.29 hectares within the 2km buffer.</li>
+                    <li><strong>Significant Contraction:</strong> "Cluster 0" saw a dramatic decline, dropping from 618.02 hectares to just 178.79 hectares, indicating substantial land transformation, likely vegetation loss to built-up academic and residential areas.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="../assets/downloads/Final-Project-(Moses Noah Adewale).pdf" download class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Full Project Thesis (.pdf)
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-airplane.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">Historical Airplane Crash Analysis</span>
+                </a>
+                <a href="project-spotify.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">Spotify Wrapped 2025 Analysis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

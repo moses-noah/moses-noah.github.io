@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Airplane Crash Analysis - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Historical Airplane Crash Analysis</h1>
+            <p class="project-subtitle">An end-to-end Python project exploring a century of aviation safety, deployed as an interactive Streamlit web application.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>December 2024</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Data Analyst</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/airplane-crash-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://airplane-crash-analysis-fq2l4ffr6e9wxenrbkj4xs.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    Aviation safety is a story of trial, error, and technological evolution. To understand this progression, I needed to analyze over 100 years of historical crash data to uncover long-term safety trends, identify the most dangerous eras, and measure the actual impact of major regulatory milestones on passenger survival.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    As my debut Python data analysis project, I built a custom, end-to-end data pipeline. I utilized Pandas and NumPy inside Jupyter Notebooks for rigorous data cleaning, including fuzzy string matching to standardize manufacturer names, and dictionary mapping to replace incorrect values. After conducting EDA with Matplotlib and Seaborn, I deployed the final interactive visualizations as a live web application using Streamlit.
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fab fa-python"></i> Python
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-database"></i> Pandas
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-chart-line"></i> Streamlit
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <img src="../assets/images/airplane-webapp.PNG" alt="Streamlit Web Application" class="showcase-image lightbox-trigger" onclick="openLightbox('lightbox-main')">
+            </div>
+
+            <p class="showcase-caption">
+                The live Streamlit application featuring charts that show aviation milestones, passenger volumes, and crash severity over time.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Click image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox-main">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-main')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/airplane-webapp.PNG" alt="Streamlit Web Application">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Raw CSV Dataset → Jupyter Notebooks (Pandas/NumPy for Cleaning & Dictionary Mapping) → EDA & Visualizations (Matplotlib/Seaborn) → Python Script (<code>webapp.py</code>) → Streamlit Cloud Deployment.
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>CSV → Jupyter → EDA → Python → Streamlit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Behind the Scenes</h2>
+                <p>Here's a glimpse into the technical work that powers this project:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/airplane-cleaning.PNG" alt="Data Cleaning via Dictionary Mapping in Jupyter" class="lightbox-trigger" onclick="openLightbox('lightbox-cleaning')">
+                        <p>Data Cleaning via Dictionary Mapping in Jupyter</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/airplane-eda.PNG" alt="Multi-line Chart from EDA showing Ground Casualties, Air Fatalities, and Passengers Aboard" class="lightbox-trigger" onclick="openLightbox('lightbox-eda')">
+                        <p>Multi-line Chart from EDA showing Ground Casualties, Air Fatalities, and Passengers Aboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-cleaning">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-cleaning')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/airplane-cleaning.PNG" alt="Data Cleaning via Dictionary Mapping in Jupyter">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-eda">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-eda')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/airplane-eda.PNG" alt="Multi-line Chart from EDA showing Ground Casualties, Air Fatalities, and Passengers Aboard">
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Code Logic</h2>
+                <p>Here's a sample of the Python code used to correct manufacturer names using fuzzy string matching and dictionary mapping:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">Python</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+# Function to correct manufacturer names using fuzzy string matching
+def correct_manufacturer(name, valid_list):
+    if name not in valid_list:  # Only process if name is not valid
+        # Find the best match using process.extractOne
+        match, score = process.extractOne(name, valid_list)
+        return match if score >= 80 else None  # Correct if similarity score >= 80
+    return name 
+
+# Apply correction to the dataset
+df["Aircraft Manufacturer"] = df["Aircraft Manufacturer"].apply(
+    lambda x: correct_manufacturer(x, valid_manufacturer_unique)
+)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what was discovered:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">> 4B</div>
+                    <p class="insight-description">Peak Passenger Volume in 2019</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">Negative</div>
+                    <p class="insight-description">Correlation: Demand vs. Crashes</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">2020s</div>
+                    <p class="insight-description">Safest Era on Record</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">100+ Yrs</div>
+                    <p class="insight-description">Historical Data Range</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>The "Demand vs. Safety" Paradox:</strong> Despite air travel passenger volumes skyrocketing from near-zero in 1945 to over 4 billion by 2019, crash incidents showed a strong negative correlation, proving that aviation has become exponentially safer as it scaled.</li>
+                    <li><strong>Regulatory Impact:</strong> Data visualizes clear, quantifiable drops in crash incidents following major milestones, such as the implementation of GPS (1990) and the advent of automated safety systems (2005).</li>
+                    <li><strong>The Physics of Survival:</strong> Although overall fatality proportions have plummeted, historical data shows that survivors rarely outnumber fatalities in crash events due to the catastrophic physical nature of mid-air and landing failures.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="https://github.com/moses-noah/airplane-crash-analysis/blob/main/webapp.py" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                    <i class="fas fa-code"></i> View Python Source Code
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-covid.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">COVID-19 Global Pandemic Analysis</span>
+                </a>
+                <a href="project-lulc.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">Web-Based Change Detection Dashboard</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

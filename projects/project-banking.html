@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Data Storytelling - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Banking Data Storytelling & Risk Analytics</h1>
+            <p class="project-subtitle">Uncovering customer demographics, loan default risks, and transaction behaviors for 2,939 bank customers.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>July 2025</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Data Analyst (Hackathon Participant)</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/Banking-Data-Storytelling" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    During the Data Science Nigeria (DSN) "AI Classes In Every City" hackathon, the challenge was to uncover actionable patterns within a banking dataset of nearly 3,000 customers. Stakeholders needed to understand loan default risks, customer demographics, and operational bottlenecks (such as peak transaction times) to drive strategic marketing and lending decisions.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    I imported the raw Excel dataset into Power BI, overcoming data modeling challenges (like ambiguous relationships and categorical IDs) by flattening the model using Merged Queries in Power Query. I then engineered advanced DAX measures to dynamically format regional currency (Naira ₦) and automatically categorize customers into Loan Risk Tiers before building a 4-page interactive dashboard.
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fas fa-chart-bar"></i> Power BI
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-file-excel"></i> Excel
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-function"></i> DAX
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slide active">
+                    <img src="../assets/images/banking-dashboard-1.png" alt="Loan Analytics Dashboard" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-1')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/banking-dashboard-2.png" alt="Customer Demographics Analysis" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-2')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/banking-dashboard-3.png" alt="Transaction Behavior Analysis" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-3')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="../assets/images/banking-dashboard-4.png" alt="Risk Tier Distribution" class="lightbox-trigger" onclick="openLightbox('lightbox-carousel-4')">
+                </div>
+
+                <button class="carousel-nav carousel-prev">❮</button>
+                <button class="carousel-nav carousel-next">❯</button>
+            </div>
+
+            <div class="carousel-indicators">
+                <button class="carousel-dot active" onclick="updateCarousel(0)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(1)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(2)"></button>
+                <button class="carousel-dot" onclick="updateCarousel(3)"></button>
+            </div>
+
+            <p class="showcase-caption">
+                The Loan Analytics Dashboard highlighting total loan amounts, top borrowing demographics, and automated risk categorization.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Use arrow keys or buttons to navigate • Click any image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODALS FOR CAROUSEL IMAGES -->
+    <div class="lightbox" id="lightbox-carousel-1">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-1')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/banking-dashboard-1.png" alt="Loan Analytics Dashboard">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-2">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-2')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/banking-dashboard-2.png" alt="Customer Demographics Analysis">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-3">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-3')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/banking-dashboard-3.png" alt="Transaction Behavior Analysis">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-carousel-4">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-carousel-4')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/banking-dashboard-4.png" alt="Risk Tier Distribution">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Hackathon Excel Dataset → Power Query (Data Cleaning & Merged Queries for Relationship Resolution) → Power BI (Star Schema Data Modeling) → Advanced DAX Engineering → Interactive Dashboards.
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>Excel → Power Query → Star Schema → DAX → Power BI Dashboards</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Data Engineering</h2>
+                <p>Key technical components of the banking analytics project:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/banking-data-model.PNG" alt="Data Modeling & Relationship Resolution" class="lightbox-trigger" onclick="openLightbox('lightbox-datamodel')">
+                        <p>Data Modeling & Relationship Resolution</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/banking-DAX-measure-engineering.PNG" alt="DAX Measure Engineering" class="lightbox-trigger" onclick="openLightbox('lightbox-dax')">
+                        <p>DAX Measure Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-datamodel">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-datamodel')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/banking-data-model.PNG" alt="Data Modeling & Relationship Resolution">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-dax">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-dax')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/banking-DAX-measure-engineering.PNG" alt="DAX Measure Engineering">
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>DAX Measures & Risk Automation</h2>
+                <p>Here's a sample of the advanced DAX measures engineered to automate risk categorization and dynamic currency formatting:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">DAX</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+// Automated Loan Risk Tiering based on Loan-to-Deposit Ratio
+Loan Risk Tier = SWITCH(
+    TRUE(),
+    [Loan to Deposit Ratio] > 1000, "🚨 Critical Risk",
+    [Loan to Deposit Ratio] > 5,    "⚠️ High Risk",
+    [Loan to Deposit Ratio] > 1,    "⚠️ Moderate Risk",
+    [Loan to Deposit Ratio] > 0,    "✅ Low Risk",
+    "No Risk"
+)
+
+// Dynamic Loan Display with Naira Currency Format
+VAR amt = SUM(Loan[Bank Loans])
+RETURN
+SWITCH(
+TRUE(), 
+    amt >= 1_000_000_000_000, FORMAT(amt / 1_000_000_000_000, "₦#,0.00") & "T",
+    amt >= 1_000_000_000, FORMAT(amt / 1_000_000_000, "₦#,0.00") & "B",
+    amt >= 1_000_000, FORMAT(amt / 1_000_000, "₦#,0.00") & "M",
+    amt >= 1_000, FORMAT(amt / 1_000, "₦#,0.00") & "K",
+    FORMAT(amt, "₦#,0")
+)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what the hackathon analysis revealed:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">2,939</div>
+                    <p class="insight-description">Total Customers Profiled</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">₦1.29T</div>
+                    <p class="insight-description">Domiciliary Balances</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">6PM-12AM</div>
+                    <p class="insight-description">Peak Transaction Hours</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">60+</div>
+                    <p class="insight-description">Dominant Age Demographic</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>Risk Profiling:</strong> A significant portion of loan customers were flagged as "Critical Risk" due to aggressive borrowing behaviors relative to their deposits.</li>
+                    <li><strong>Demographic Targeting:</strong> Senior Citizens (60+) dominate both the general customer base and represent the largest group of borrowers.</li>
+                    <li><strong>Operational Bottlenecks:</strong> Peak transaction volumes consistently occur between 6 PM and 12 AM, suggesting a strong need for targeted evening services and robust 24/7 IT support.</li>
+                    <li><strong>Account Dominance:</strong> Domiciliary accounts hold the highest opening balances (₦1.29T), signaling a lucrative base of international or high-net-worth clients.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="../assets/downloads/Banking-Data-Storytelling-Report.pdf" download class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Project Report
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-adidas.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">Adidas Sales Analysis</span>
+                </a>
+
+                <a href="project-wida.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">WiDa Data Analytics Internship</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

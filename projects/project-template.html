@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== PAGE TITLE - CUSTOMIZE FOR EACH PROJECT ===== -->
+    <title>Project Name - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== 1. NAVIGATION BAR (STICKY) ===== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== 2. THE "HOOK" (HERO SECTION) ===== -->
+    <section class="project-hero">
+        <div class="hero-content">
+            <!-- PROJECT TITLE - CUSTOMIZE -->
+            <h1 class="project-title">Project Name Here</h1>
+            
+            <!-- ONE-LINER SUBTITLE - CUSTOMIZE -->
+            <p class="project-subtitle">Brief impact summary or tagline that captures the project's essence.</p>
+            
+            <!-- METADATA ROW -->
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Date</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Your Role</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <!-- CTA BUTTONS -->
+            <div class="hero-cta">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-play-circle"></i> View Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 3. THE "SETUP" (CONTEXT GRID) ===== -->
+    <section class="project-setup">
+        <div class="setup-container">
+            <!-- LEFT COLUMN: THE PROBLEM -->
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    Describe the business challenge or opportunity that prompted this project. 
+                    What pain points did stakeholders face? What metrics were struggling?
+                </p>
+            </div>
+
+            <!-- RIGHT COLUMN: THE SOLUTION -->
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    Explain your approach at a high level. What framework or methodology did you use? 
+                    How does your solution address the problem stated above?
+                </p>
+            </div>
+        </div>
+
+        <!-- TECH STACK BADGES -->
+        <div class="tech-stack-badges">
+            <!-- CUSTOMIZE: Add/remove badges based on tools used -->
+            <span class="tech-badge">
+                <i class="fas fa-chart-bar"></i> Power BI
+            </span>
+            <span class="tech-badge">
+                <i class="fab fa-python"></i> Python
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-database"></i> SQL
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-file-excel"></i> Excel
+            </span>
+        </div>
+    </section>
+
+    <!-- ===== 4. THE "ACTION" (DEMO SHOWCASE) ===== -->
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <!-- PLACEHOLDER FOR EMBEDDED VIDEO/GIF/IFRAME -->
+            <div class="showcase-media">
+                <!-- 
+                    CUSTOMIZE: Replace with one of the following:
+                    A) Image with LIGHTBOX/ZOOM feature:
+                        <img src="../assets/images/your-image.png" alt="Description" class="lightbox-trigger" onclick="openLightbox('lightbox-main')">
+                    B) Video Embed:
+                        <iframe src="https://..." width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+                    C) Power BI Embed:
+                        <iframe title="Dashboard" src="https://powerbi-url" frameborder="0" allowFullScreen="true"></iframe>
+                    
+                    If using lightbox, add this modal div AFTER </section>:
+                    <div class="lightbox" id="lightbox-main">
+                        <div class="lightbox-content">
+                            <span class="lightbox-close" onclick="closeLightbox('lightbox-main')">&times;</span>
+                            <img class="lightbox-image" src="../assets/images/your-image.png" alt="Description">
+                        </div>
+                    </div>
+                -->
+                <div class="placeholder-media">
+                    <i class="fas fa-image"></i>
+                    <p>Screenshot / Video / Dashboard Embed</p>
+                </div>
+            </div>
+
+            <!-- STYLED CAPTION -->
+            <p class="showcase-caption">
+                Add a caption here that describes what the viewer is seeing. 
+                Explain the key feature or outcome visible in the media above.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Click image to view full size if using lightbox)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== 5. THE "JOURNEY" (TECHNICAL DEEP DIVE) ===== -->
+    <section class="project-journey">
+        <div class="journey-container">
+            <!-- SUBSECTION A: ARCHITECTURE -->
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Provide a high-level overview of how data flows through your system. 
+                    Include input sources, transformation steps, and outputs.
+                </p>
+                <div class="architecture-diagram">
+                    <!-- CUSTOMIZE: Replace with actual architecture image or diagram -->
+                    <img src="../assets/images/architecture.jpg" alt="Data Architecture Diagram">
+                </div>
+            </div>
+
+            <!-- SUBSECTION B: BEHIND THE SCENES (SCREENSHOTS) -->
+            <div class="journey-section">
+                <h2>Behind the Scenes</h2>
+                <p>Here's a glimpse into the technical work that powers this project.</p>
+                <div class="behind-scenes-grid">
+                    <!-- 
+                        CUSTOMIZE: Replace with actual project screenshots
+                        TO ADD LIGHTBOX/ZOOM FEATURE:
+                        1. Add class="lightbox-trigger" to the <img> tag
+                        2. Add onclick="openLightbox('lightbox-UNIQUE-ID')" to the <img> tag
+                        3. Create a lightbox modal div AFTER this journey-section (see example below)
+                        
+                        EXAMPLE WITH LIGHTBOX:
+                        <div class="scene-card">
+                            <img src="../assets/images/screenshot-1.jpg" alt="Process Screenshot 1" class="lightbox-trigger" onclick="openLightbox('lightbox-scene1')">
+                            <p>Step or Process Name 1</p>
+                        </div>
+                        
+                        Then add this after </section>:
+                        <div class="lightbox" id="lightbox-scene1">
+                            <div class="lightbox-content">
+                                <span class="lightbox-close" onclick="closeLightbox('lightbox-scene1')">&times;</span>
+                                <img class="lightbox-image" src="../assets/images/screenshot-1.jpg" alt="Process Screenshot 1">
+                            </div>
+                        </div>
+                        
+                        NOTE: Lightbox functionality is AUTOMATIC via script.js - just add the HTML structure above!
+                    -->
+                    <div class="scene-card">
+                        <img src="../assets/images/screenshot-1.jpg" alt="Process Screenshot 1">
+                        <p>Step or Process Name 1</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/screenshot-2.jpg" alt="Process Screenshot 2">
+                        <p>Step or Process Name 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBSECTION C: CODE LOGIC -->
+            <div class="journey-section">
+                <h2>Code Logic</h2>
+                <p>Here's a sample of the code that makes this project work:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">Python</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+# CUSTOMIZE: Replace with your actual code snippet
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+
+# Load data
+data = pd.read_csv('dataset.csv')
+
+# Train model
+model = RandomForestClassifier(n_estimators=100)
+model.fit(data[features], data[target])
+
+# Make predictions
+predictions = model.predict(new_data)
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. THE "CREW" (COLLABORATION SECTION) ===== -->
+    <!-- OPTIONAL: Remove this section if project was solo work -->
+    <section class="project-crew">
+        <div class="crew-container">
+            <h2>The Crew</h2>
+            <p>Great projects are built with great people. Here's who made this possible:</p>
+
+            <div class="collaborators-grid">
+                <!-- CUSTOMIZE: Add/remove collaborator cards as needed -->
+                <div class="collaborator-card">
+                    <div class="collaborator-name">John Doe</div>
+                    <div class="collaborator-role">Frontend Developer</div>
+                    <div class="collaborator-links">
+                        <a href="#" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collaborator-card">
+                    <div class="collaborator-name">Jane Smith</div>
+                    <div class="collaborator-role">Data Scientist</div>
+                    <div class="collaborator-links">
+                        <a href="#" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 7. THE "RESOLUTION" (KEY INSIGHTS) ===== -->
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what we achieved and learned:</p>
+
+            <div class="insights-grid">
+                <!-- CUSTOMIZE: Add/remove insights cards as needed -->
+                <div class="insight-card">
+                    <div class="insight-metric">+45%</div>
+                    <p class="insight-description">Improvement in key metric</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">$2.5M</div>
+                    <p class="insight-description">Revenue impact or cost savings</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">3 weeks</div>
+                    <p class="insight-description">Time savings per reporting cycle</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">92%</div>
+                    <p class="insight-description">Model accuracy or success rate</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Learnings</h3>
+                <ul>
+                    <li>First major insight or learning from the project</li>
+                    <li>Second important discovery or methodology advantage</li>
+                    <li>Third takeaway or best practice identified</li>
+                    <li>Fourth conclusion or recommendation for future work</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 8. THE "OUTRO" (FOOTER NAVIGATION) ===== -->
+    <section class="project-outro">
+        <div class="outro-container">
+            <!-- DOWNLOAD ASSETS BUTTON -->
+            <div class="outro-download">
+                <a href="#" class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Project Assets
+                </a>
+            </div>
+
+            <!-- PREVIOUS/NEXT PROJECT NAVIGATION -->
+            <div class="project-navigation">
+                <a href="project-banking.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">Banking Data Storytelling</span>
+                </a>
+
+                <a href="project-wida.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">Electronics Store Sales Analysis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STANDARD FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="../script.js"></script>
+</body>
+</html>

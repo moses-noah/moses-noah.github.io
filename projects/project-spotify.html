@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Wrapped 2025 Analysis - Moses Noah Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">Moses Noah</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="project-title">Spotify Wrapped 2025 Analysis</h1>
+            <p class="project-subtitle">Moving beyond the standard "Wrapped" to uncover the granular details of my year in audio.</p>
+            
+            <div class="project-metadata">
+                <span class="meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>February 2026</span>
+                </span>
+                <span class="meta-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Data Analyst</span>
+                </span>
+                <span class="project-status">
+                    <i class="fas fa-check-circle"></i>
+                    Completed
+                </span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="https://github.com/moses-noah/2025-Spotify-Wrapped-Analysis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-setup">
+        <div class="setup-container">
+            <div class="setup-column">
+                <h3>The Business Problem</h3>
+                <p>
+                    Standard Spotify Wrapped summaries only provide surface-level metrics at the end of the year. I wanted to analyze my raw streaming history to uncover deeper behavioral trends, precise streaming volumes, and my true top artists by both play count and time spent listening.
+                </p>
+            </div>
+
+            <div class="setup-column">
+                <h3>The Solution</h3>
+                <p>
+                    I requested my raw JSON streaming data from Spotify, converted it to CSV, and used Excel extensively to clean, parse, and enrich the data. I flattened the dataset and extracted temporal data (days, months, dates) directly in Excel before importing the flat file into Power BI to build an interactive visual report.
+                </p>
+            </div>
+        </div>
+
+        <div class="tech-stack-badges">
+            <span class="tech-badge">
+                <i class="fas fa-file-excel"></i> Excel
+            </span>
+            <span class="tech-badge">
+                <i class="fas fa-chart-bar"></i> Power BI
+            </span>
+        </div>
+    </section>
+
+    <section class="project-showcase">
+        <div class="showcase-container">
+            <div class="showcase-media">
+                <img src="../assets/images/spotify-wrapped-main.png" alt="Spotify Wrapped 2025 Report" class="showcase-image lightbox-trigger">
+            </div>
+
+            <p class="showcase-caption">
+                The main page of my 2025 Spotify Wrapped Power BI report showcasing my top artists and overarching listening metrics.
+                <br><em style="color: var(--text-lighter); font-size: 0.9rem; display: block; margin-top: 0.5rem;">(Click image to view full size)</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox-main">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox('lightbox-main')">&times;</span>
+            <img class="lightbox-image" src="../assets/images/spotify-wrapped-main.png" alt="Spotify Wrapped 2025 Report">
+        </div>
+    </div>
+
+    <section class="project-journey">
+        <div class="journey-container">
+            <div class="journey-section">
+                <h2>Architecture & Data Flow</h2>
+                <p>
+                    Raw JSON from Spotify Privacy Portal → Converted to flat CSV → Excel (Temporal Extraction, millisecond conversions, and XLOOKUP Enrichment) → Power BI (Flat File Visualization).
+                </p>
+                <div class="architecture-diagram">
+                    <div class="placeholder-media" style="height: 100%; border-radius: 0;">
+                        <i class="fas fa-sitemap"></i>
+                        <p>Spotify JSON → CSV → Excel → Power BI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Behind the Scenes</h2>
+                <p>Here's a glimpse into the technical work that powers this project:</p>
+                <div class="behind-scenes-grid">
+                    <div class="scene-card">
+                        <img src="../assets/images/spotify-excel-dataset.png" alt="Cleaned Excel Dataset" class="lightbox-trigger" onclick="openLightbox('lightbox-excel')">
+                        <p>Flattened JSON data with enriched temporal features</p>
+                    </div>
+                    <div class="scene-card">
+                        <img src="../assets/images/spotify-powerbi-canvas.png" alt="Power BI Report Canvas" class="lightbox-trigger" onclick="openLightbox('lightbox-powerbi')">
+                        <p>Interactive visualizations and streaming analytics</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIGHTBOX MODALS FOR BEHIND SCENES -->
+            <div class="lightbox" id="lightbox-excel">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-excel')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/spotify-excel-dataset.png" alt="Cleaned Excel Dataset">
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox-powerbi">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox('lightbox-powerbi')">&times;</span>
+                    <img class="lightbox-image" src="../assets/images/spotify-powerbi-canvas.png" alt="Power BI Report Canvas">
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Code Logic</h2>
+                <p>Here's a sample of the Excel formulas used to enrich and extract temporal features from the Spotify data:</p>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-lang">Excel</span>
+                        <i class="fas fa-copy code-copy"></i>
+                    </div>
+                    <pre><code>
+// Using XLOOKUP to enrich the main table with Album data
+=XLOOKUP([@[Track_Name]] & [@[Artist_Name]], MyLibrary_Tracks[tracks/track] & MyLibrary_Tracks[tracks/artist], MyLibrary_Tracks[tracks/album], "Unknown Album")
+
+// Extracting Day Name from End_Time
+=TEXT([@[End_Time]], "dddd")
+
+// Converting milliseconds to minutes for listening duration
+=[@[ms_Played]]/60000
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project-resolution">
+        <div class="resolution-container">
+            <h2>Key Findings & Results</h2>
+            <p>Here's what I achieved and learned:</p>
+
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-metric">690.8</div>
+                    <p class="insight-description">Total Hours Listened</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">22,432</div>
+                    <p class="insight-description">Total Streams</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">Logic</div>
+                    <p class="insight-description">Top Artist by Volume</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-metric">990</div>
+                    <p class="insight-description">Distinct Artists</p>
+                </div>
+            </div>
+
+            <div class="key-learnings">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li>I spent the equivalent of 29 days streaming music in 2025, averaging 61 songs (roughly 3 hours) daily.</li>
+                    <li>My listening catalog was highly diverse, spanning 990 distinct artists, 2,424 distinct songs, and 898 unique albums.</li>
+                    <li>Logic was the undisputed top artist of the year, leading significantly in both total stream time (119 hours) and total number of streams (3.31K).</li>
+                    <li>Twenty One Pilots and NF followed as the second and third most streamed artists, respectively.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-outro">
+        <div class="outro-container">
+            <div class="outro-download">
+                <a href="../assets/downloads/Spotify-Wrapped-2025-Report.pdf" download class="btn btn-primary btn-large">
+                    <i class="fas fa-download"></i> Download Project Report
+                </a>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project-lulc.html" class="nav-project prev-project">
+                    <span class="nav-label">← Previous Project</span>
+                    <span class="nav-title">Web-Based Change Detection Dashboard</span>
+                </a>
+                <a href="project-adidas.html" class="nav-project next-project">
+                    <span class="nav-label">Next Project →</span>
+                    <span class="nav-title">Adidas US Sales Performance</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Moses Noah</h3>
+                <p>Data-driven insights, one project at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/moses-noah" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:mosesn540@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moses Noah. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> Python & Coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
