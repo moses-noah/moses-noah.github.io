@@ -240,9 +240,9 @@ a {
 }
 
 .hero-subtitle {
-    font-size: 1.375rem;
+    font-size: 1rem;
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -283,6 +283,12 @@ a {
 .hero-image {
     display: flex;
     justify-content: center;
+}
+
+.hero-image img {
+    max-width: 350px; /* Change this number to make it bigger or smaller */
+    width: 100%; /* Ensures it stays responsive on mobile */
+    height: auto; /* Prevents the image from looking stretched or squished */
 }
 
 /* =============================================
@@ -1039,6 +1045,32 @@ a {
 
 .timeline-item .project-card-archive {
     flex: 1;
+}
+
+/* =============================================
+   MOBILE RESPONSIVE QUERIES
+   ============================================= */
+
+@media (max-width: 768px) {
+    /* Stack the marker and the card vertically */
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.75rem; /* Reduces the gap between the date and the card */
+    }
+
+    /* Lay the dot and the date side-by-side horizontally */
+    .timeline-marker {
+        flex-direction: row;
+        align-items: center;
+        min-width: auto; /* Removes the 100px width constraint */
+    }
+
+    /* Align the date text to the left */
+    .timeline-date {
+        text-align: left;
+        width: auto;
+        font-size: 1rem; /* Slightly larger for mobile readability */
+    }
 }
 
 /* =============================================
